@@ -1,5 +1,6 @@
 [package]
 name = "crude_cache"
+description = "A simple utility for good enough concurrent caching needs."
 version = "0.1.0"
 edition = "2021"
 authors = ["Jeremias"]
