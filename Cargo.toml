@@ -3,6 +3,7 @@ name = "crude_cache"
 version = "0.1.0"
 edition = "2021"
 authors = ["Jeremias"]
+license = "MIT"
 
 [dependencies]
 tokio = { version = "1", features = ["sync", "time", "rt", "macros"] }

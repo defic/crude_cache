@@ -2,13 +2,13 @@
 
 //! # CrudeCache
 //!
-//! A simple utility for caching data.
+//! A simple utility for good enough concurrent caching needs.
 //!
 //! ## Overview
 //!
 //! `CrudeCache` uses a sharding approach to improve concurrent access. It divides the cached data across multiple internal `HashMap`s to reduce contention. Each shard is protected by its own `tokio::sync::RwLock`, ensuring safe concurrent read and write operations.
 //!
-//! For an example usage in application dataservice, check in [tests/cache_test.rs](https://github.com/defic/crude_cache/blob/main/tests/cache_test.rs).
+//! For an example usage in application dataservice, check in [tests/cache_test.rs](https://github.com/defic/crude_cache/blob/master/tests/cache_test.rs).
 //! 
 //! ## Basic Usage
 //!
