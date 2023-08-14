@@ -5,6 +5,7 @@ version = "0.1.0"
 edition = "2021"
 authors = ["Jeremias"]
 license = "MIT"
+repository = "https://github.com/defic/crude_cache"
 
 [dependencies]
 tokio = { version = "1", features = ["sync", "time", "rt", "macros"] }
