@@ -1,0 +1,13 @@
+[package]
+name = "crude_cache"
+version = "0.1.0"
+edition = "2021"
+authors = ["Jeremias"]
+
+[dependencies]
+tokio = { version = "1", features = ["sync", "time", "rt", "macros"] }
+
+[dev-dependencies]
+timeit = "0.1.2"
+futures = "0.3.28"
+
