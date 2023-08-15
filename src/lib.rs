@@ -47,7 +47,7 @@ type Item = (Instant, Box<dyn Any + Sync + Send>);
 
 #[derive(Clone)]
 pub struct CrudeCache {
-    inner: Arc<ShardedMap<Item>>
+    inner: Arc<ShardedMap<String, Item>>
 }
 
 impl Default for CrudeCache {
