@@ -25,7 +25,7 @@ Add this to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-crude_cache = "0.1.0"
+crude_cache = "0.1.1"
 ```
 
 ## Example usage
