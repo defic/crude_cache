@@ -9,7 +9,7 @@ use futures::future::join_all;
 pub struct Db {}
 impl Db {
     pub async fn big_data(&self) -> Vec<usize> {
-        println!("-- big data called");
+        println!("-- DB -- big data called");
         tokio::time::sleep(Duration::from_secs(1)).await;
         vec![9,8,7,6,5,4,3,2,1,0]
     }

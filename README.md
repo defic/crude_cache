@@ -11,13 +11,13 @@
 cache.get_or_else_update("cache_key", Duration::from_secs(60), async_function).await
 ```
 
-**Disclaimer:** Please note that `CrudeCache` was developed for personal projects and is not battle-tested in production environments. Plus I am still new to Rust, so contributions, suggestions, and feedback are more than welcome.
+**Disclaimer:** Please note that `CrudeCache` was developed for personal projects, it is not battle-tested in production and might contain bugs. Feedback, suggestions, and contributions are more than welcome.
 
 ## Features
 
 - Expiration of cached items are evaluated lazily.
-- To minimize contention points, items are stored in a `ShardedMap`, which splits the data across multiple shards (`HashMaps`). It is a naive solution for concurrency, and there is no resharding.
-- Each shard is behind `tokio::sync::RwLock`.
+- To minimize contention points, items are stored in a `ShardedMap`, which splits the data across multiple shards (`HashMaps`). No bells and whistles, and no resharding.
+- Each shard is behind `tokio::sync::RwLock`
 
 ## Installation
 
